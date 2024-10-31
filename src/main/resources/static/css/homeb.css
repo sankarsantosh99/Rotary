@@ -1,0 +1,196 @@
+.navbar-nav a{
+    color:white;
+}
+
+.dropdown-menu a{
+    color: var(--bs-black);
+}
+
+.hero-cus{
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    position:relative;
+    margin-top: 85px;
+}
+
+.hero-text-cus{
+    text-shadow:2px 2px 8px rgba(0,0,0,.45) ;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.527);
+    position: absolute;
+    width: 100%;
+    height:100%
+}
+
+.hero-text-cus p{
+    font-size: 2rem;
+}
+
+
+/*info-1*/
+.inf{
+   margin-top: -50px;
+}
+.ico{
+  font-size: 25px;
+}
+.ico1{
+    font-size: 24px;    
+  }
+
+
+
+/*info-2*/
+.theme{
+    height: 305px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theme-text{
+    background-color:rgba(0, 0, 0, 0.685) ;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.theme:hover .theme-text{
+    visibility: initial;
+}
+
+
+/*card what we do*/
+.card-cus{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+/*footer*/
+.back{
+    background-image: url("/images/img4.png");
+    background-repeat: repeat;
+}
+
+.fimg{
+    width: 200px;
+    height: 50px;
+    object-fit: contain;
+}
+
+
+/*Media query for 768px starts*/
+@media (max-width:768px){
+
+.hero-cus{
+    min-height:40vh ;
+}
+
+.hero-text-cus p{
+    font-size:1em;
+}
+
+p{
+    font-size: .8rem;
+}
+
+    /*Home page -info-1*/
+.info-items{
+    flex-direction: column;
+}  
+}
+/*Media query for 768px ends*/
+
+
+    /*About page*/
+
+.visMis{
+    margin-top: 10px;
+    
+}
+
+.whatwedo{
+    background-image: url("/images/img5.jpg");
+    
+}
+
+.carou{
+    height:300px;
+    margin-top: 100px;
+    background-color: rgb(124, 119, 126);
+}
+.carou-img{
+    height:300px;
+    object-fit:contain;
+}
+
+ /*Members page*/
+
+.members{
+    margin-top: 95px;
+}
+
+.mem-con{
+  width:260px;
+  height:200px;
+  border: 8px solid rgb(44, 165, 80);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.mem-img{
+    width:200px;
+    height:260px;
+    object-fit: cover;
+    object-position:top;
+}
+.mem-text{
+     font-size: .85rem;/*continue in media query*/
+}
+
+/*Media query for Members 768px starts*/
+@media (max-width:768px){
+.mem-con{
+    width:140px;
+    height:200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+  }
+  .mem-img{
+      width:120px;
+      height:180px;
+
+  }
+  .mem-text{
+      font-size: .8rem;
+  }
+
+}
+
+ /*login page*/
+
+ .loginpage{
+    margin-top: 150px;
+ }
+
+ .slog{
+ margin-bottom:90px;
+ }
+
+ /*Contact us*/
+
+ .cont{
+    margin-top: 150px;
+ }
+
+
+
+/*Admin page*/
+
+.admin{
+    margin: 150px 10px 10px 10px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Upcoming events</title>
+
+    <link rel="icon"
+          type="image/x-icon"
+          th:href="@{/images/img1.png}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <link rel="stylesheet"
+          th:href="@{/css/homeb.css}">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-md bg-dark-subtle fixed-top ">
+
+    <div class="container-fluid ">
+
+        <a class="navbar-brand"
+           href="#"><img th:src="@{/images/img2.png}"></a>
+
+        <button class="navbar-toggler "
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center"
+             id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="/home">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#aboutus"
+                       role="button"
+                       data-bs-toggle="dropdown">About
+                                                 Us</a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="/about">Rotary
+                                             club
+                                             of
+                                             Tirunelveli</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="/members">Members
+                                               of
+                                               Tirunelveli</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="https://www.rotary.org/en"
+                               target="_blank">Rotary
+                                               International</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="https://rotaryindia.org/Home.aspx"
+                               target="_blank">Rotary
+                                               India</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#events"
+                       role="button"
+                       data-bs-toggle="dropdown">Events</a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="/upevents">Upcoming
+                                                Events</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="/pevents">Past
+                                               Events</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#contact"
+                       role="button"
+                       data-bs-toggle="dropdown">Contact</a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="/findus">Find
+                                              Us</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="https://forms.rotaryindia.org/kaizeninfotechsolutionspvtltd/form/RotaryIndiaJoinUs/formperma/GjFYZIo47UATcU_2AtUIzRoEo8fCZ_dfLBtT87MjZUI"
+                               target="_blank">Join
+                                               Us</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+        <button type="button"
+                class="btn btn-success me-2">
+            Donate
+        </button>
+
+        <button type="button"
+                onclick="window.location.href='/adminlogin';"
+                class="btn btn-light text-nowrap">
+            Admin
+            <i class="bi bi-box-arrow-in-right"
+               width="16"
+               height="16"></i>
+        </button>
+
+    </div>
+</nav>
+
+</body>
+</html>
